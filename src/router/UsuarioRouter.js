@@ -3,7 +3,7 @@ import { Router } from 'express';
 
 const router = Router();
 
-router.post('/createUsuario', createUsuarios);
+router.post('/', createUsuarios);
 
 
 export const usuarioRouter = router;

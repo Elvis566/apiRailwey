@@ -17,7 +17,7 @@ const port =    PORT;
 app.use(cors());
 app.use(bodyParser.json()) // para que se puedan recibir datos en formato JSON
 app.use(bodyParser.urlencoded({ extended: false })) // para que se puedan enviar
-app.use('/usuario', usuarioRouter);
+app.use('/', usuarioRouter);
 app.use('/tarea', tareaRouter);
 app.use('/categoria', categoriaRouter);
 // app.use('/api', categoriaRouter)
